@@ -1,0 +1,10 @@
+# Upstream scEssentials clone (does not belong to this repo)
+scEssentials/
+
+# Large generated demo data (recreate with demo_make_data.py)
+data_demo.h5ad
+demo_out.csv
+
+# Python
+__pycache__/
+*.pyc
