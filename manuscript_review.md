@@ -15,7 +15,7 @@ abstract: |
   data requirements of each approach, surveys and benchmarks the current state of
   the art — including a rapidly growing family of deep-learning predictors (DeepHE,
   EPGAT, FluxGAT, LeAP, EssentialGIN, DeepHEM, DeepVul, XGEP) and scCRISPR
-  generative models (DEGAS, scLAMBDA, PerturbNet) — and critically compares the two
+  generative models (scLAMBDA, PerturbNet) — and critically compares the two
   paradigms. We argue that the most promising direction is a supervised,
   context-aware synthesis that uses functional CRISPR labels (DepMap) to learn and
   reweight the expression-derived essentiality score, extended by sequence /
@@ -145,27 +145,34 @@ essentiality calls. Population-fitness models **Chronos** (Dempster 2021) and
 ## 3.4 Generative models & single-cell CRISPR (scCRISPR)
 
 The current frontier is predicting *single-cell perturbation response* and
-essentiality from scCRISPR screens:
+essentiality from scCRISPR screens. The following are verifiable via public APIs
+(PubMed / Crossref / Europe PMC):
 
 | Tool | Year | Venue / DOI | Approach |
 |------|------|-------------|----------|
-| **DEGAS** | 2023 | Nat Commun | deep generative (VAE) model of gene essentiality from single-cell CRISPR screens |
 | **scLAMBDA** | 2024 | bioRxiv 10.1101/2024.12.04.626878 | deep generative framework for scCRISPR perturbation responses |
 | **PerturbNet** | 2025 | Mol Syst Biol 10.1038/s44320-025-00131-3 | generative model for single-cell perturbation response |
 | ACE | 2021 | Genome Biol 10.1186/s13059-021-02491-z | profile-HMM essentiality from (single-cell) CRISPR screens |
 | Chronos | 2021 | Genome Biol 10.1186/s13059-021-02540-7 | cell-population fitness model |
 | scCRISPR tiling | 2021 | Nat Commun 10.1038/s41467-021-24324-0 | functional inference from single-cell CRISPR tiling |
+| Single-cell CRISPR essentiality assay | 2015 | Biol Proced Online (PMID:26578851) | medium-throughput single-cell CRISPR essentiality assay |
 
-> **Verification note.** DEGAS is a journal-only publication (not on arXiv); its
-> exact DOI could not be auto-verified from title search during this review. It is
-> cited here from domain knowledge; confirm the DOI (Nat Commun 2023,
-> ~10.1038/s41467-023-…) before submission.
+> **Verification note.** The widely-cited **DEGAS** ("A deep generative model of
+> gene essentiality from single-cell CRISPR screens," attributed to Lorbeer, Tan,
+> et al., Nat Commun 2023) could **not be confirmed** through PubMed, Crossref,
+> Europe PMC, or arXiv title/name searches performed for this review, and no
+> canonical public repository was found. It is therefore **not** included in the
+> verified table above; if it is to be cited, its DOI and authorship must be
+> confirmed from the original publication before submission. The same applies to
+> **scEVE** and **CHNet**, which appear in the essentiality literature but could not
+> be verified against public APIs or a canonical repository.
 
 ## 3.5 Methods with no canonical public repository
 
 **DEGAS**, **scEVE**, and **CHNet** appear in the literature but could not be
-confirmed in a canonical GitHub repository during this survey; they should be
-sourced from their papers directly.
+verified in this survey (neither a canonical GitHub repository nor a resolvable
+DOI via PubMed/Crossref/Europe PMC/arXiv). They should be sourced directly from
+their papers, with DOI and authorship confirmed, before being cited.
 
 # 4. Comparison and Strengths / Weaknesses
 
@@ -198,7 +205,7 @@ genes; FluxGAT/metabolic-topology avoid FBA bias.
 *Weaknesses:* network completeness/quality dependent; require curated networks;
 less mature for single-cell resolution.
 
-**Generative / scCRISPR (DEGAS, scLAMBDA, PerturbNet).**
+**Generative / scCRISPR (scLAMBDA, PerturbNet).**
 *Strengths:* capture sample-level heterogeneity and perturbation responses;
 single-cell resolution; predict phenotypes for unseen genes/conditions.
 *Weaknesses:* data-hungry; heavy compute; label quality from screen design;
@@ -250,7 +257,7 @@ context modelling rather than a single global score.
 4. **Sequence / DNA-LLM features.** Cover unexpressed genes and enable
    cross-species transfer (EssTFNet, dnaHNet, ProteomeLM).
 5. **Generative scCRISPR alignment.** Where scCRISPR data exist, align/validate
-   against DEGAS/scLAMBDA-style generative essentiality to capture perturbation
+   against scLAMBDA/PerturbNet-style generative essentiality to capture perturbation
    response and heterogeneity.
 6. **Co-essentiality modules.** Deliver functionally-enriched modules (with
    GO/KEGG) instead of flat lists.
@@ -317,8 +324,6 @@ context modelling rather than a single global score.
   2022. DOI:10.15302/j-qb-022-0299.
 
 ## Generative / scCRISPR
-- **DEGAS.** Lorbeer, Tan, et al. A deep generative model of gene essentiality from
-  single-cell CRISPR screens. *Nat Commun* 2023. *(DOI to confirm: 10.1038/s41467-023-…)*
 - Wang et al. scLAMBDA. *bioRxiv* 2024. DOI:10.1101/2024.12.04.626878.
 - Yu et al. PerturbNet. *Mol Syst Biol* 2025. DOI:10.1038/s44320-025-00131-3.
 
