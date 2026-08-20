@@ -176,6 +176,14 @@ their papers, with DOI and authorship confirmed, before being cited.
 
 # 4. Comparison and Strengths / Weaknesses
 
+![Comparison of the four method paradigms across six qualitative dimensions.
+(A) Radar chart. (B) Grouped dimension scores. Scores range 0–5 and reflect the
+authors' qualitative assessment from the survey in Section 3.
+](manuscript_figure_comparison.png){#fig:comparison width=95%}
+
+Figure @fig:comparison summarises the qualitative trade-offs among the four
+paradigms discussed below (Section 4.1) and detailed in Sections 3–5.
+
 ## 4.1 Cross-cutting comparison
 
 | Dimension | Expression-robust (scEssentials) | Functional (DepMap/CRISPR) | Deep learning |

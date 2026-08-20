@@ -151,6 +151,12 @@ keywords: [必需基因, 单细胞 RNA-seq, CRISPR, DepMap, 深度学习, 基因
 
 # 4. 对比与优缺点
 
+![四类方法范式在六个定性维度上的对比。（A）雷达图。（B）分组维度得分。分数范围为
+0–5，反映作者基于第 3 节调研的定性评估。
+](manuscript_figure_comparison.png){#fig:comparison width=95%}
+
+图 @fig:comparison 总结了下面 4.1 节讨论、并由第 3–5 节详述的四类范式之间的定性权衡。
+
 ## 4.1 横向对比
 
 | 维度 | 基于表达稳健（scEssentials） | 基于功能（DepMap/CRISPR） | 深度学习 |
