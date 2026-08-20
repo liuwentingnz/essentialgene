@@ -157,22 +157,29 @@ essentiality from scCRISPR screens. The following are verifiable via public APIs
 | scCRISPR tiling | 2021 | Nat Commun 10.1038/s41467-021-24324-0 | functional inference from single-cell CRISPR tiling |
 | Single-cell CRISPR essentiality assay | 2015 | Biol Proced Online (PMID:26578851) | medium-throughput single-cell CRISPR essentiality assay |
 
-> **Verification note.** The widely-cited **DEGAS** ("A deep generative model of
-> gene essentiality from single-cell CRISPR screens," attributed to Lorbeer, Tan,
-> et al., Nat Commun 2023) could **not be confirmed** through PubMed, Crossref,
-> Europe PMC, or arXiv title/name searches performed for this review, and no
-> canonical public repository was found. It is therefore **not** included in the
-> verified table above; if it is to be cited, its DOI and authorship must be
-> confirmed from the original publication before submission. The same applies to
-> **scEVE** and **CHNet**, which appear in the essentiality literature but could not
-> be verified against public APIs or a canonical repository.
+> **Verification note (2026-08-20).** The widely-cited **DEGAS** ("A deep generative
+> model of gene essentiality from single-cell CRISPR screens," attributed to Lorbeer,
+> Tan, et al., Nat Commun 2023) could **not be confirmed** through any bibliographic
+> index used in this review (PubMed, Crossref, Europe PMC, OpenAlex, arXiv); no such
+> paper exists in these indices, and no Lorbeer/Tan Nat Commun 2023 record was found.
+> The acronym "DEGAS" instead resolves to an unrelated disease-cell transfer-learning
+> framework (Johnson et al., *Genome Medicine* 2022, DOI 10.1186/s13073-022-01012-2).
+> Accordingly, DEGAS is **excluded** from this review and any DOI for it would be
+> fabricated. The same applies to **scEVE** and **CHNet**: scEVE resolves to an
+> unrelated single-cell clustering algorithm (Asloudj et al., *NAR Genomics
+> Bioinformatics* 2025, DOI 10.1093/nargab/lqaf073), and CHNet could not be verified.
+> Readers should confirm primary sources directly before citing these names.
 
-## 3.5 Methods with no canonical public repository
+## 3.5 Methods with no canonical public repository / unverified citations
 
-**DEGAS**, **scEVE**, and **CHNet** appear in the literature but could not be
-verified in this survey (neither a canonical GitHub repository nor a resolvable
-DOI via PubMed/Crossref/Europe PMC/arXiv). They should be sourced directly from
-their papers, with DOI and authorship confirmed, before being cited.
+**DEGAS**, **scEVE**, and **CHNet** are names that appear in secondary sources but
+could not be verified as gene-essentiality methods in any bibliographic index
+(PubMed, Crossref, Europe PMC, OpenAlex, arXiv). In each case the acronym resolves
+to an unrelated tool: DEGAS → disease-cell transfer learning (Johnson et al. 2022);
+scEVE → ensemble clustering (Asloudj et al. 2025); CHNet → unverifiable. These are
+therefore **excluded** from the verified survey, and no citation is provided for
+them. If the intended "DEGAS gene-essentiality" paper genuinely exists, its details
+must be obtained from a primary source before citation.
 
 # 4. Comparison and Strengths / Weaknesses
 

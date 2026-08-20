@@ -136,18 +136,23 @@ keywords: [必需基因, 单细胞 RNA-seq, CRISPR, DepMap, 深度学习, 基因
 | scCRISPR tiling | 2021 | Nat Commun 10.1038/s41467-021-24324-0 | 单细胞 CRISPR tiling 的功能推断 |
 | 单细胞 CRISPR 必需性实验 | 2015 | Biol Proced Online（PMID:26578851） | 中通量单细胞 CRISPR 必需性测定 |
 
-> **验证说明。** 广被引用的 **DEGAS**（"A deep generative model of gene essentiality from
-> single-cell CRISPR screens"，归属于 Lorbeer、Tan 等，Nat Commun 2023）在本综述对
-> PubMed、Crossref、Europe PMC、arXiv 的标题/名称检索中**无法得到确认**，也未找到其
-> 规范的公开仓库。因此**未**列在上表的已验证条目中；若需引用，必须在投稿前从原始
-> 出版物核实其 DOI 与作者。**scEVE** 与 **CHNet** 同理——它们出现在必需性相关文献中，
-> 但无法通过公开 API 或规范仓库得到验证。
+> **验证说明（2026-08-20）。** 广被引用的 **DEGAS**（"A deep generative model of gene
+> essentiality from single-cell CRISPR screens"，归属于 Lorbeer、Tan 等，Nat Commun
+> 2023）在本综述所使用的所有文献索引（PubMed、Crossref、Europe PMC、OpenAlex、arXiv）
+> 中**均无法确认**；这些索引中不存在这样的论文，也未找到 Lorbeer/Tan 于 2023 年发表的
+> Nat Commun 记录。缩写 "DEGAS" 实际指向的是一项不相关的疾病细胞迁移学习方法
+> （Johnson 等，*Genome Medicine* 2022，DOI 10.1186/s13073-022-01012-2）。因此综述
+> 中**排除**了 DEGAS——为其给出任何 DOI 都将是伪造。**scEVE** 与 **CHNet** 同理：scEVE
+> 指向一个不相关的单细胞聚类算法（Asloudj 等，*NAR Genomics Bioinformatics* 2025，DOI
+> 10.1093/nargab/lqaf073），CHNet 无法验证。引用这些名称前，读者应直接确认原始来源。
 
-## 3.5 无规范公开仓库的方法
+## 3.5 无规范公开仓库 / 无法验证的引用
 
-**DEGAS**、**scEVE** 与 **CHNet** 出现在文献中，但本综述无法验证（既无规范 GitHub
-仓库，也无法通过 PubMed/Crossref/Europe PMC/arXiv 解析出 DOI）。它们应从各自论文直接
-获取，并在引用前核实 DOI 与作者信息。
+**DEGAS**、**scEVE** 与 **CHNet** 是出现在二手来源中的名称，但无法在任何文献索引
+（PubMed、Crossref、Europe PMC、OpenAlex、arXiv）中作为必需基因方法得到验证。三者的
+缩写各自指向无关工具：DEGAS → 疾病细胞迁移学习（Johnson 等 2022）；scEVE → 集成聚类
+（Asloudj 等 2025）；CHNet → 无法验证。因此综述**排除**了它们，且不为其提供引用。
+若所谓的"DEGAS 必需基因"论文确实存在，引用前必须从原始来源获取其详细信息。
 
 # 4. 对比与优缺点
 
